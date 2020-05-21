@@ -24,7 +24,7 @@ async function getCommentsOnHashtag(ig,hashtag){
     //Login
     let ig = await login()
     //Define hashtags
-    const hashtagsfood = [
+    /*const hashtagsfood = [
         "vegan",
         "govegan",
         "foodporn",
@@ -38,10 +38,14 @@ async function getCommentsOnHashtag(ig,hashtag){
         "instafood",
         "nomnom",
         "food"
+    ]*/
+    const hashtagMainStream =[
+        "picoftheday",
+        "catsofinstagram"
     ]
 
-    for(let i = 0 ; i < hashtagsfood.length; i++){
-        console.log("ACTUAL HASHTAG ---> " + hashtagsfood[i])
+    for(let i = 0 ; i < hashtagMainStream.length; i++){
+        console.log("ACTUAL HASHTAG ---> " + hashtagMainStream[i])
         await getCommentsOnHashtag(ig,"vegan")
     }
 
